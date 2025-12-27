@@ -1,35 +1,55 @@
-/* 打字机效果 */
+/* 
+ * 打字机效果样式
+ * 通过设置动画时间和steps函数来控制打字速度
+ * animation: typing 动画时长 steps(字符数, end) [, blink-caret 光标闪烁动画]
+ */
+
+/* 主标题打字机效果 */
 #home-info .wrap h1 {
     overflow: hidden;
-    border-right: 2px solid #fff;
+    border-right: 2px solid #fff; /* 光标效果 */
     white-space: nowrap;
     margin: 0 auto;
     letter-spacing: .15em;
-    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+    /* 
+     * typing: 打字动画，时长1.5秒（原3.5秒），更快的打字效果
+     * blink-caret: 光标闪烁动画，无限循环
+     */
+    animation: typing 1.5s steps(40, end), blink-caret 0.75s step-end infinite;
     width: 0;
 }
 
+/* 副标题打字机效果 */
 #home-info .wrap h3 {
     overflow: hidden;
-    border-right: 2px solid #fff;
+    border-right: 2px solid #fff; /* 光标效果 */
     white-space: nowrap;
     margin: 0 auto;
     letter-spacing: .15em;
-    animation: typing 3.5s steps(40, end) 0.5s, blink-caret 0.75s step-end infinite 0.5s;
+    /* 
+     * typing: 延迟0.3秒开始，时长1.5秒
+     * blink-caret: 延迟0.3秒开始，光标闪烁动画
+     */
+    animation: typing 1.5s steps(40, end) 0.3s, blink-caret 0.75s step-end infinite 0.3s;
     width: 0;
 }
 
+/* 描述文字打字机效果 */
 #home-info .wrap h5 {
     overflow: hidden;
-    border-right: 2px solid #fff;
+    border-right: 2px solid #fff; /* 光标效果 */
     white-space: nowrap;
     margin: 0 auto;
     letter-spacing: .15em;
-    animation: typing 3.5s steps(40, end) 1s, blink-caret 0.75s step-end infinite 1s;
+    /* 
+     * typing: 延迟0.6秒开始，时长1.5秒
+     * blink-caret: 延迟0.6秒开始，光标闪烁动画
+     */
+    animation: typing 1.5s steps(40, end) 0.6s, blink-caret 0.75s step-end infinite 0.6s;
     width: 0;
 }
 
-/* 打字机动画 */
+/* 打字机动画定义 - 控制文字逐渐显示 */
 @keyframes typing {
     from {
         width: 0;
@@ -39,12 +59,12 @@
     }
 }
 
-/* 光标闪烁动画 */
+/* 光标闪烁动画定义 */
 @keyframes blink-caret {
     from, to {
-        border-color: transparent;
+        border-color: transparent; /* 透明，隐藏光标 */
     }
     50% {
-        border-color: #fff;
+        border-color: #fff; /* 白色，显示光标 */
     }
 }
