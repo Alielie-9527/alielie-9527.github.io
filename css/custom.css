@@ -11,12 +11,12 @@
     white-space: nowrap;
     margin: 0 auto;
     letter-spacing: .15em;
-    font-size: 1.5em; /* 调整主标题字体大小 */
+    font-size: 1.0em; /* 调整主标题字体大小 */
     /* 
      * typing: 打字动画，时长1.5秒（原3.5秒），更快的打字效果
      * blink-caret: 光标闪烁动画，无限循环
      */
-    animation: typing 1.5s steps(40, end), blink-caret 0.75s step-end infinite;
+    animation: typing 1.2s steps(40, end), blink-caret 0.75s step-end infinite;
     width: 0;
 }
 
@@ -29,10 +29,10 @@
     letter-spacing: .15em;
     font-size: 1.8em; /* 调整副标题字体大小 */
     /* 
-     * typing: 延迟0.3秒开始，时长1.5秒
+     * typing: 延迟0.3秒开始，时长1.2秒
      * blink-caret: 延迟0.3秒开始，光标闪烁动画
      */
-    animation: typing 1.5s steps(40, end) 0.3s, blink-caret 0.75s step-end infinite 0.3s;
+    animation: typing 1.2s steps(40, end) 0.3s, blink-caret 0.75s step-end infinite 0.3s;
     width: 0;
 }
 
