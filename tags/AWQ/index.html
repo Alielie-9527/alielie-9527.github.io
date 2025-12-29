@@ -3,7 +3,7 @@
 <html lang="zh-CN">
 <head>
     <meta charset="utf-8" />
-    <title>我的新页面 | Alielie&#39;s Blog</title>
+    <title>Tags: AWQ | Alielie&#39;s Blog</title>
     <meta name="author" content="Alielie" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
@@ -42,10 +42,6 @@
 
 
 <script src="/js/lib/preview.js"></script>
-
-
-
-
 
 
 
@@ -158,75 +154,147 @@
     <div id="menu-curtain" @click="showMenuItems = !showMenuItems" v-show="showMenuItems"></div>
 </transition>
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
-            <div class="article">
-    <div>
-        <h1>我的新页面</h1>
-    </div>
-    <div class="info">
-        <span class="date">
-            <span class="icon">
-                <i class="fa-solid fa-calendar fa-fw"></i>
-            </span>
-            2025/12/27
-        </span>
+            <div id="archives">
+    
+    <div class="categories-tags">
         
-        <span class="category">
-            <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+        
+        
+        <span>
+            <a href="/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E9%87%8F%E5%8C%96/" style="background: #00a596">
                 <span class="icon">
-                    <i class="fa-solid fa-bookmark fa-fw"></i>
+                    <i class="fa-solid fa-tags fa-fw"></i>
                 </span>
-                学习笔记
+                大模型量化
             </a>
         </span>
         
         
-        <span class="tags">
-            <span class="icon">
-                <i class="fa-solid fa-tags fa-fw"></i>
-            </span>
-            
-            
-            <span class="tag">
-                
-                <a href="/tags/%E6%96%B0%E9%A1%B5%E9%9D%A2/" style="color: #ffa2c4">
-                    新页面
-                </a>
-            </span>
-            
-            <span class="tag">
-                
-                <a href="/tags/%E6%B5%8B%E8%AF%95/" style="color: #00a596">
-                    测试
-                </a>
-            </span>
-            
-            <span class="tag">
-                
-                <a href="/tags/JavaScript/" style="color: #03a9f4">
-                    JavaScript
-                </a>
-            </span>
-            
+        
+        <span>
+            <a href="/tags/AWQ/" style="background: linear-gradient(120deg, #9abbf7 0%, #ffbbf4 100%)">
+                <span class="icon">
+                    <i class="fa-solid fa-tags fa-fw"></i>
+                </span>
+                AWQ
+            </a>
         </span>
+        
+        
+        
+        
+        
+        <span>
+            <a href="/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E9%87%8F%E5%8C%96%EF%BC%8CGPTQ/" style="background: #ffa2c4">
+                <span class="icon">
+                    <i class="fa-solid fa-tags fa-fw"></i>
+                </span>
+                大模型量化，GPTQ
+            </a>
+        </span>
+        
+        
+        
+        <span>
+            <a href="/tags/PEFT/" style="background: #00bcd4">
+                <span class="icon">
+                    <i class="fa-solid fa-tags fa-fw"></i>
+                </span>
+                PEFT
+            </a>
+        </span>
+        
+        
+        
+        <span>
+            <a href="/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%BE%AE%E8%B0%83/" style="background: #00a596">
+                <span class="icon">
+                    <i class="fa-solid fa-tags fa-fw"></i>
+                </span>
+                大模型微调
+            </a>
+        </span>
+        
+        
+        
+        <span>
+            <a href="/tags/%E6%96%B0%E9%A1%B5%E9%9D%A2/" style="background: #00bcd4">
+                <span class="icon">
+                    <i class="fa-solid fa-tags fa-fw"></i>
+                </span>
+                新页面
+            </a>
+        </span>
+        
+        
+        
+        <span>
+            <a href="/tags/%E6%B5%8B%E8%AF%95/" style="background: #03a9f4">
+                <span class="icon">
+                    <i class="fa-solid fa-tags fa-fw"></i>
+                </span>
+                测试
+            </a>
+        </span>
+        
+        
+        
+        <span>
+            <a href="/tags/JavaScript/" style="background: #ffa2c4">
+                <span class="icon">
+                    <i class="fa-solid fa-tags fa-fw"></i>
+                </span>
+                JavaScript
+            </a>
+        </span>
+        
         
     </div>
     
-    <div class="content" v-pre>
-        <h1 id="欢迎来到我的博客"><a href="#欢迎来到我的博客" class="headerlink" title="欢迎来到我的博客"></a>欢迎来到我的博客</h1><p>这是我自定义的页面内容。</p>
-<h2 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h2><p>这里是关于我的介绍。</p>
-<h2 id="最新文章"><a href="#最新文章" class="headerlink" title="最新文章"></a>最新文章</h2><p>我会在这里分享我的想法和技术文章。</p>
-
+    <div class="timeline">
+        <div class="timeline-tail"></div>
+        <div class="timeline-content">
+            <div class="item-time">2025/12/29</div>
+            <a href="/2025/12/29/LLM%E9%87%8F%E5%8C%96%E4%B9%8BAWQ%E7%AF%87/">
+                <h3>LLM量化之AWQ篇</h3>
+            </a>
+            <div class="info">
+                
+                <span class="category">
+                    <a href="/categories/LLM%E5%AD%A6%E4%B9%A0/">
+                        <span class="icon">
+                            <i class="fa-solid fa-bookmark fa-fw"></i>
+                        </span>
+                        LLM学习
+                    </a>
+                </span>
+                
+                
+                <span class="tags">
+                    <span class="icon">
+                        <i class="fa-solid fa-tags fa-fw"></i>
+                    </span>
+                    
+                    
+                    <span class="tag">
+                        
+                        <a href="/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E9%87%8F%E5%8C%96/" style="color: #ffa2c4">
+                            大模型量化
+                        </a>
+                    </span>
+                    
+                    <span class="tag">
+                        
+                        <a href="/tags/AWQ/" style="color: #00bcd4">
+                            AWQ
+                        </a>
+                    </span>
+                    
+                </span>
+                
+            </div>
+        </div>
     </div>
-    
-    
-    
-    
-    <div id="comment">
-        <div id="giscus-container" class="giscus"></div>
-    </div>
-    
-    
-    
     
 </div>
 
@@ -258,29 +326,6 @@
         
     </div>
     <script src="/js/main.js"></script>
-    
-    
-<script
-    src="https://giscus.app/client.js"
-    data-repo="Alielie-9527/alielie-9527.github.io"
-    data-repo-id="R_kgDOQvfoCQ"
-    data-category="General"
-    data-category-id="DIC_kwDOQvfoCc4C0SEV"
-    data-mapping="pathname"
-    data-strict="0"
-    data-reactions-enabled="1"
-    data-emit-metadata="0"
-    data-input-position="bottom"
-    data-theme="preferred_color_scheme"
-    data-lang="zh-CN"
-    crossorigin
-    async
-></script>
-
-
-
-
-
     
 </body>
 </html>
