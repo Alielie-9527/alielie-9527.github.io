@@ -195,7 +195,7 @@
             
             <span class="tag">
                 
-                <a href="/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%BE%AE%E8%B0%83/" style="color: #ffa2c4">
+                <a href="/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%BE%AE%E8%B0%83/" style="color: #03a9f4">
                     大模型微调
                 </a>
             </span>
@@ -210,7 +210,7 @@
 </blockquote>
 <hr>
 <h2 id="1-什么是-PEFT？"><a href="#1-什么是-PEFT？" class="headerlink" title="1. 什么是 PEFT？"></a>1. 什么是 PEFT？</h2><p><strong>PEFT (Parameter-Efficient Fine-Tuning)</strong>，即参数高效微调。</p>
-<p>它的核心哲学是：<strong>弱水三千，只取一瓢。</strong> 我们不需要重新训练整个大模型（几百 GB 的显存占用！），而是仅训练其中**极小部分（&lt;1%）**的参数，同时冻结绝大部分原始权重。</p>
+<p>它的核心哲学是：<strong>弱水三千，只取一瓢。</strong> 我们不需要重新训练整个大模型（几百 GB 的显存占用！），而是仅训练其中**极小部分（&lt;1% 的参数）**的参数，同时冻结绝大部分原始权重。</p>
 <h3 id="1-1-PEFT-家族核心成员"><a href="#1-1-PEFT-家族核心成员" class="headerlink" title="1.1 PEFT 家族核心成员"></a>1.1 PEFT 家族核心成员</h3><ul>
 <li><strong>LoRA (目前最流行)</strong>：通过低秩分解来模拟权重的变化。</li>
 <li><strong>QLoRA</strong>：LoRA 的究极进化版，先压缩模型（4-bit）再训练。</li>
